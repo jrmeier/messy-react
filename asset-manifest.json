@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/messy-react/static/css/main.e6c13ad2.css",
+    "main.js": "/messy-react/static/js/main.463948b5.js",
+    "index.html": "/messy-react/index.html",
+    "main.e6c13ad2.css.map": "/messy-react/static/css/main.e6c13ad2.css.map",
+    "main.463948b5.js.map": "/messy-react/static/js/main.463948b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.463948b5.js"
+  ]
+}
