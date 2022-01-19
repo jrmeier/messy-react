@@ -12,7 +12,6 @@ jobs:
           node-version: 14
 
       - name: Install Deps
-      - run: npm i
+        run: npm i
       - run: npm test
-      - run: npm run deploy
-      
+      - run: npm deploy
