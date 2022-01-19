@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should return a single card 1`] = `
+<Card
+  product={
+    Object {
+      "brandName": "Waring",
+      "image": "https://www.restaurantsupply.com/media/catalog/product/cache/acb79d03af3da2b97c59ded0fca57b36/w/a/waring-ww180x_004_1.jpg",
+      "name": "World's Best Waffle Maker",
+      "price": "$1,000",
+      "storeName": "Wayfair",
+      "type": "RETAIL",
+    }
+  }
+/>
+`;

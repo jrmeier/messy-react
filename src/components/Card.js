@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-export const Card = ({ cardResults }) => {
-  const [clicked, setIsClicked] = useState(false);
-  const { name, image, type, brandName, price, storeName } = cardResults
+export const Card = ({ product }) => {
+  const [clicked, setClicked] = useState(false);
+  const { name, image, type, brandName, price, storeName } = product
 
   return (
-    <div style={{ border: "1px solid black" }} onClick={() => setIsClicked(!clicked)}>
+    <div style={{ border: "1px solid black" }} onClick={() => setClicked(!clicked)}>
       {clicked && (
         <div>
           <p>Price: {price}</p>

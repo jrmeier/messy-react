@@ -9,23 +9,23 @@ function App() {
   const [cardResults, setCardResults] = useState([]);
 
   useEffect(() => {
-    if(!products.length) {
+    if(!products.length ) {
         getProductsApi()
           .then(res => setProducts(res.data));
     }
-  });
+  }, [products]);
 
   useEffect(() => {
     // if theres any filter set, use it
     if(searchInput || searchProduct) {
       const newCardResults = products
         .filter(product => (searchProduct === product.type || product?.name?.toLowerCase().includes(searchInput?.toLowerCase())))
-        .map((product, idx) => <Card cardResults={product} key={idx}/>);
+        .map((product, idx) => <Card product={product} key={idx}/>);
         setCardResults(newCardResults)
     } else {
       // if there is no filter, use all the products
       setCardResults(
-        [...products.map((product, idx) => <Card cardResults={product} key={idx}/>)
+        [...products.map((product, idx) => <Card product={product} key={idx}/>)
       ])
     }
   }, [searchInput, searchProduct, products]);
