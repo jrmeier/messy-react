@@ -14,4 +14,4 @@ jobs:
       - name: Install Deps
         run: npm i
       - run: npm test
-      - run: npm deploy
+      - run: npm run deploy
